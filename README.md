@@ -12,14 +12,7 @@ This project demonstrates a resilient approach by strictly separating the Test I
 
 **🛠️ Getting Started**
 📦 Project Structure
-
-AI-Powered-Gherkin-Test-Agent/
-├── features/
-│   └── login.feature             # Example Gherkin feature file
-├── feature_parser.py             # Parses Gherkin into semantic maps.
-├── agent_executor.py             # (To be Developed) Executes intelligent actions.
-├── requirements.txt              # Project dependencies (Selenium/Playwright, BeautifulSoup).
-└── README.md
+<img width="965" height="177" alt="image" src="https://github.com/user-attachments/assets/10c8a38a-6cde-4df2-8e22-891a3fd371df" />
 
 **✅ Installation**
 1. Clone the Repository: git clone https://github.com/[Your-Username]/AI-Powered-Gherkin-Test-Agent.git
