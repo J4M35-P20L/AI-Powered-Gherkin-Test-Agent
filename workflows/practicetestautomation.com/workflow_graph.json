@@ -1,0 +1,51 @@
+{
+    "nodes": {
+        "bc679030f902f029c4fcce88fba4cda8": {
+            "url": "https://practicetestautomation.com/practice-test-login/",
+            "ui_summary": "[\n  {\n    \"selector\": \"#toggle-navigation\",\n    \"text\": \"open menu\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#username\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#password\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#submit\",\n    \"text\": \"Submit\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  }\n]"
+        },
+        "a6a8670f86ec5bc07e30877683afef43": {
+            "url": "https://practicetestautomation.com/practice-test-login/",
+            "ui_summary": "[\n  {\n    \"selector\": \"#toggle-navigation\",\n    \"text\": \"open menu\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#username\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#password\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#submit\",\n    \"text\": \"Submit\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  }\n]"
+        },
+        "8182afe00883b1d491bfac74b7a832b4": {
+            "url": "https://practicetestautomation.com/practice-test-login/",
+            "ui_summary": "[\n  {\n    \"selector\": \"#toggle-navigation\",\n    \"text\": \"open menu\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#username\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#password\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"#submit\",\n    \"text\": \"Submit\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  }\n]"
+        }
+    },
+    "edges": [
+        {
+            "from": "START",
+            "to": "bc679030f902f029c4fcce88fba4cda8",
+            "action": {
+                "action": "initial_load"
+            }
+        },
+        {
+            "from": "bc679030f902f029c4fcce88fba4cda8",
+            "to": "a6a8670f86ec5bc07e30877683afef43",
+            "action": {
+                "action": "fill",
+                "selector": "#username",
+                "value": "abc"
+            }
+        },
+        {
+            "from": "a6a8670f86ec5bc07e30877683afef43",
+            "to": "8182afe00883b1d491bfac74b7a832b4",
+            "action": {
+                "action": "fill",
+                "selector": "#password",
+                "value": "Password123"
+            }
+        },
+        {
+            "from": "8182afe00883b1d491bfac74b7a832b4",
+            "to": "bc679030f902f029c4fcce88fba4cda8",
+            "action": {
+                "action": "click",
+                "selector": "#submit"
+            }
+        }
+    ]
+}

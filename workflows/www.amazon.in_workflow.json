@@ -1,0 +1,27 @@
+{
+    "nodes": {
+        "8a5fbf6e829459237aaec9f03aca1cbd": {
+            "description": "State discovered during learning"
+        },
+        "fd5a1b81783f8034ed0dbb2e9b86bdba": {
+            "description": "State discovered during learning"
+        }
+    },
+    "edges": [
+        {
+            "from": "START",
+            "to": "8a5fbf6e829459237aaec9f03aca1cbd",
+            "action": {
+                "action": "initial_load"
+            }
+        },
+        {
+            "from": "8a5fbf6e829459237aaec9f03aca1cbd",
+            "to": "fd5a1b81783f8034ed0dbb2e9b86bdba",
+            "action": {
+                "action": "click",
+                "selector": "#nav-search-submit-button"
+            }
+        }
+    ]
+}

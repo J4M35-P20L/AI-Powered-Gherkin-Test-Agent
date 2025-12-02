@@ -2,3 +2,8 @@ openai
 python-dotenv
 playwright
 beautifulsoup4
+pytest
+pytest-html
+google-generativeai
+# --- NEW: Library for Windows desktop automation ---
+pywinauto

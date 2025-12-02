@@ -1,0 +1,43 @@
+{
+    "nodes": {
+        "d751713988987e9331980363e24189ce": {
+            "url": "http://localhost:8080/opencart/",
+            "ui_summary": "[\n  {\n    \"selector\": \"[name='code']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"[name='redirect']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"http://localhost:8080/opencart/index.php?route=common/home\"\n  },\n  {\n    \"selector\": \"#wishlist-total\",\n    \"text\": \"Wish List (0)\",\n    \"placeholder\": \"\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"[name='search']\",\n    \"text\": \"\",\n    \"placeholder\": \"Search\",\n    \"value\": \"\"\n  },\n  {\n    \"selector\": \"[name='product_id']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"43\"\n  },\n  {\n    \"selector\": \"[name='quantity']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"1\"\n  },\n  {\n    \"selector\": \"[name='product_id']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"40\"\n  },\n  {\n    \"selector\": \"[name='quantity']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"1\"\n  },\n  {\n    \"selector\": \"[name='product_id']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"42\"\n  },\n  {\n    \"selector\": \"[name='quantity']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"2\"\n  },\n  {\n    \"selector\": \"[name='product_id']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"30\"\n  },\n  {\n    \"selector\": \"[name='quantity']\",\n    \"text\": \"\",\n    \"placeholder\": \"\",\n    \"value\": \"1\"\n  }\n]"
+        }
+    },
+    "edges": [
+        {
+            "from": "START",
+            "to": "d751713988987e9331980363e24189ce",
+            "action": {
+                "action": "initial_load"
+            }
+        },
+        {
+            "from": "d751713988987e9331980363e24189ce",
+            "to": "d751713988987e9331980363e24189ce",
+            "action": {
+                "action": "fill",
+                "selector": "[name='search']",
+                "value": "iPhone"
+            }
+        },
+        {
+            "from": "d751713988987e9331980363e24189ce",
+            "to": "d751713988987e9331980363e24189ce",
+            "action": {
+                "action": "click",
+                "selector": "[name='search']"
+            }
+        },
+        {
+            "from": "d751713988987e9331980363e24189ce",
+            "to": "d751713988987e9331980363e24189ce",
+            "action": {
+                "action": "fill",
+                "selector": "[name='search']",
+                "value": "MacBook"
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+1752646724.9493976: STEP 1: Script started.
+1752646724.9495137: Python Version: 3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]
+1752646724.949554: STEP 2: Entering sync_playwright context manager...
+1752646725.426047: STEP 3: Playwright context manager active.
+1752646725.4260995: STEP 4: Attempting to launch browser with a 30-second timeout...
+1752646725.6739995: STEP 5: Browser launched successfully!
+1752646727.0099967: STEP 6: Navigated to test page.
+1752646732.1861343: STEP 7: Browser closed.
+1752646732.194849: STEP 8: Script finished.
