@@ -1,12 +1,12 @@
-#🤖 AI-Powered Gherkin Test Agent
+🤖 AI-Powered Gherkin Test Agent
 An innovative testing framework that uses GenAI principles to translate natural language test steps (Gherkin) into resilient, self-healing UI actions. This moves test automation from brittle, fixed locators to intelligent, semantic understanding.
 
-#💡 Core Architecture: From Intent to Action
+💡 Core Architecture: From Intent to Action
 This project demonstrates a resilient approach by strictly separating the Test Intent from the Execution Strategy.
 
 <img width="878" height="388" alt="image" src="https://github.com/user-attachments/assets/1923e763-d1ac-42ad-95ee-c7ad0a85231e" />
 
-#✨ Key Features & Resilience
+✨ #Key Features & Resilience
 
 <img width="862" height="327" alt="image" src="https://github.com/user-attachments/assets/13b4039d-7b38-4a1a-9312-86cc5285a9ba" />
 
