@@ -1,27 +1,27 @@
-🤖 AI-Powered Gherkin Test Agent
+# 🤖 AI-Powered Gherkin Test Agent
 An innovative testing framework that uses GenAI principles to translate natural language test steps (Gherkin) into resilient, self-healing UI actions. This moves test automation from brittle, fixed locators to intelligent, semantic understanding.
 
-💡 Core Architecture: From Intent to Action
+# 💡 Core Architecture: From Intent to Action
 This project demonstrates a resilient approach by strictly separating the Test Intent from the Execution Strategy.
 
 <img width="878" height="388" alt="image" src="https://github.com/user-attachments/assets/1923e763-d1ac-42ad-95ee-c7ad0a85231e" />
 
-✨ #Key Features & Resilience
+# ✨ Key Features & Resilience
 
 <img width="862" height="327" alt="image" src="https://github.com/user-attachments/assets/13b4039d-7b38-4a1a-9312-86cc5285a9ba" />
 
-#🛠️ Getting Started
+# 🛠️ Getting Started
 📦 Project Structure
 <img width="965" height="177" alt="image" src="https://github.com/user-attachments/assets/10c8a38a-6cde-4df2-8e22-891a3fd371df" />
 
-#✅ Installation
+# ✅ Installation
 1. Clone the Repository: git clone https://github.com/[Your-Username]/AI-Powered-Gherkin-Test-Agent.git
                          cd AI-Powered-Gherkin-Test-Agent
 2. Install Dependencies: pip install -r requirements.txt
    📌 Note: For GenAI features, you will need to configure your environment with necessary API keys (e.g., for Gemini or OpenAI) within the agent_executor.py module.
 
-📝 Usage Example**
-Gherkin Input (login.feature)**
+# 📝 Usage Example
+**Gherkin Input (login.feature)**
 Scenario: Successful login with valid credentials
   When the user enters "corp code" as "slqa"
   And the user enters "location code" as "test7"
@@ -39,7 +39,7 @@ target_element.fill("slqa")
 target_button = find_element_by_action_text("login button", dom_snapshot)
 target_button.click()
 
-#🤝 Contribution & Future Roadmap
+# 🤝 Contribution & Future Roadmap
 We welcome contributions to expand the framework's intelligence and scope.
 
 Implement LLM Integration: Full GenAI API calls for element scoring and identification.
