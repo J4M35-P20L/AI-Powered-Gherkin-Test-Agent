@@ -109,13 +109,13 @@ When to use: When you have a new feature file or the UI has changed significantl
 
 The AI will:
 
-Read your Gherkin step (e.g., "Click Login").
+a. Read your Gherkin step (e.g., "Click Login").
 
-Analyze the page structure.
+b. Analyze the page structure.
 
-Determine the best selector.
+c. Determine the best selector.
 
-Save the state transition and selector to the JSON graph.
+d. Save the state transition and selector to the JSON graph.
 
 Command:
 ```
