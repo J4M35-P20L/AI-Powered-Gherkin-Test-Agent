@@ -1,6 +1,6 @@
-# AI-Powered Web & Desktop Testing Framework
+# AI-Powered Web Testing Framework
 
-An intelligent, hybrid test automation framework that uses Google Gemini AI to translate human-readable Gherkin scenarios into executable Playwright (Web) and Pywinauto (Desktop) actions.
+An intelligent, hybrid test automation framework that uses Google Gemini AI to translate human-readable Gherkin scenarios into executable Playwright (Web) actions.
 
 Unlike traditional frameworks with brittle selectors, this tool "sees" the UI, understands your intent, and dynamically interacts with applications.
 
@@ -13,8 +13,6 @@ Unlike traditional frameworks with brittle selectors, this tool "sees" the UI, u
 🧠 **Self-Learning Mode:** The framework "learns" applications by mapping workflows and saving robust selectors to a knowledge graph.
 
 🛡️ **Validation & Anomaly Detection:** Replays learned workflows to detect regressions, UI changes, or anomalies in the application state.
-
-💻 **Hybrid Support:** Supports both Web (Playwright) and Desktop (Pywinauto) automation in a single unified architecture.
 
 # 📂 Project Structure
 ```
@@ -33,7 +31,7 @@ ai_test_gemini_framework/
 │   ├── test_scenarios.py     # Mode 1: AI Direct Execution
 │   ├── test_learn_application.py # Mode 2: Learning/Training
 │   ├── test_validation.py    # Mode 3: Validation/Regression
-│   └── test_desktop_scenarios.py # Desktop Automation
+│   └── test__scenarios.py # Scenario Finding
 ├── conftest.py               # Pytest fixtures (Browser/App setup)
 └── requirements.txt
 ```
