@@ -1,10 +1,10 @@
-AI-Powered Web & Desktop Testing Framework
+# AI-Powered Web & Desktop Testing Framework
 
 An intelligent, hybrid test automation framework that uses Google Gemini AI to translate human-readable Gherkin scenarios into executable Playwright (Web) and Pywinauto (Desktop) actions.
 
 Unlike traditional frameworks with brittle selectors, this tool "sees" the UI, understands your intent, and dynamically interacts with applications.
 
-🚀 Key Features
+# 🚀 Key Features
 
 🤖 AI-Driven Execution: No hardcoded XPaths or CSS selectors. The AI analyzes the DOM or Window Tree to find elements based on semantic descriptions (e.g., "Click the Sign In button").
 
@@ -16,8 +16,8 @@ Unlike traditional frameworks with brittle selectors, this tool "sees" the UI, u
 
 💻 Hybrid Support: Supports both Web (Playwright) and Desktop (Pywinauto) automation in a single unified architecture.
 
-📂 Project Structure
-
+# 📂 Project Structure
+```
 ai_test_gemini_framework/
 ├── features/                 # Gherkin feature files (Test Cases)
 │   ├── amazon.feature
@@ -36,45 +36,44 @@ ai_test_gemini_framework/
 │   └── test_desktop_scenarios.py # Desktop Automation
 ├── conftest.py               # Pytest fixtures (Browser/App setup)
 └── requirements.txt
+```
 
-
-🛠️ Setup & Installation
+# 🛠️ Setup & Installation
 
 Clone the Repository:
-
+```
 git clone [https://github.com/your-username/ai-test-framework.git](https://github.com/your-username/ai-test-framework.git)
 cd ai-test-framework
-
+```
 
 Create a Virtual Environment:
-
+```
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
 # Mac/Linux
 source .venv/bin/activate
-
+```
 
 Install Dependencies:
-
+```
 pip install -r requirements.txt
 playwright install
+```
 
-
-Configure Environment Variables:
-Create a .env file in the root directory:
-
+Configure Environment Variables: Create a .env file in the root directory:
+```
 # Get your key from aistudio.google.com
 GEMINI_API_KEY=your_actual_api_key_here
 BASE_URL=[https://www.amazon.com](https://www.amazon.com)
+```
 
-
-📝 Writing Tests (Gherkin)
+# 📝 Writing Tests (Gherkin)
 
 Create .feature files in the features/ folder. The framework supports standard Gherkin syntax.
 
-Example: features/amazon.feature
-
+Example: **features/amazon.feature**
+```
 Feature: Basic User Workflow on Amazon
 
   @smoke @login
@@ -99,9 +98,9 @@ Feature: Basic User Workflow on Amazon
     And the user clicks the "Search" button
     Then the user should see search results for "Mechanical Keyboard"
     And the product listing page title should contain "Mechanical Keyboard"
+```
 
-
-🏃‍♂️ Execution Modes
+# 🏃‍♂️ Execution Modes
 
 This framework operates in three distinct modes depending on your testing stage.
 
@@ -121,13 +120,13 @@ Determine the best selector.
 Save the state transition and selector to the JSON graph.
 
 Command:
-
+```
 # Run all learning tests
 pytest tests/test_learn_application.py
 
 # Run a specific feature file
 pytest tests/test_learn_application.py -k "amazon"
-
+```
 
 2. 🛡️ Validation Mode (Regression)
 
@@ -137,9 +136,9 @@ When to use: CI/CD pipelines, nightly builds, or quick regression checks.
 This mode is fast. It uses the cached selectors from workflow_graph.json. If the UI has changed and the cached selector fails, it raises an Anomaly.
 
 Command:
-
+```
 pytest tests/test_validation.py
-
+```
 
 3. 🧪 Scenario Mode (Live AI Testing)
 
@@ -147,31 +146,9 @@ Goal: Execute tests directly using the AI in real-time without saving/loading me
 When to use: Debugging new prompts, testing the AI's reasoning capabilities, or one-off test runs.
 
 Command:
-
+```
 pytest tests/test_scenarios.py -k "Amazon"
-
-
-🖥️ Desktop Automation
-
-The framework also supports desktop applications (e.g., Notepad, Calculator, Legacy ERPs).
-
-Example Feature (features/calculator.feature):
-
-Feature: Desktop Calculator
-  Scenario: Add Numbers
-    Given I connect to window "Calculator"
-    When I click element with selector "num1Button" 
-    And I click element with selector "plusButton"
-    And I click element with selector "num2Button"
-    And I click element with selector "equalButton"
-    Then I wait for "3"
-
-
-Execution Command:
-
-# Specify the app executable path
-pytest tests/test_desktop_scenarios.py --app-path="calc.exe"
-
+```
 
 🚨 Anomaly Detection
 
@@ -187,11 +164,11 @@ Reporting: (Future) The AI can be triggered upon failure to analyze the DOM and 
 
 Fork the repository.
 
-Create a feature branch (git checkout -b feature/AmazingFeature).
+Create a feature branch (```git checkout -b feature/AmazingFeature```).
 
-Commit your changes (git commit -m 'Add some AmazingFeature').
+Commit your changes (```git commit -m 'Add some AmazingFeature'```).
 
-Push to the branch (git push origin feature/AmazingFeature).
+Push to the branch (```git push origin feature/AmazingFeature```).
 
 Open a Pull Request.
 
