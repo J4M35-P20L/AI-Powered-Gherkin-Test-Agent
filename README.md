@@ -6,15 +6,15 @@ Unlike traditional frameworks with brittle selectors, this tool "sees" the UI, u
 
 # 🚀 Key Features
 
-🤖 AI-Driven Execution: No hardcoded XPaths or CSS selectors. The AI analyzes the DOM or Window Tree to find elements based on semantic descriptions (e.g., "Click the Sign In button").
+🤖 **AI-Driven Execution:** No hardcoded XPaths or CSS selectors. The AI analyzes the DOM or Window Tree to find elements based on semantic descriptions (e.g., "Click the Sign In button").
 
-📝 Natural Language Tests: Write tests in simple Gherkin syntax (.feature files).
+📝 **Natural Language Tests:** Write tests in simple Gherkin syntax (.feature files).
 
-🧠 Self-Learning Mode: The framework "learns" applications by mapping workflows and saving robust selectors to a knowledge graph.
+🧠 **Self-Learning Mode:** The framework "learns" applications by mapping workflows and saving robust selectors to a knowledge graph.
 
-🛡️ Validation & Anomaly Detection: Replays learned workflows to detect regressions, UI changes, or anomalies in the application state.
+🛡️ **Validation & Anomaly Detection:** Replays learned workflows to detect regressions, UI changes, or anomalies in the application state.
 
-💻 Hybrid Support: Supports both Web (Playwright) and Desktop (Pywinauto) automation in a single unified architecture.
+💻 **Hybrid Support:** Supports both Web (Playwright) and Desktop (Pywinauto) automation in a single unified architecture.
 
 # 📂 Project Structure
 ```
@@ -40,13 +40,13 @@ ai_test_gemini_framework/
 
 # 🛠️ Setup & Installation
 
-Clone the Repository:
+**Clone the Repository:**
 ```
 git clone [https://github.com/your-username/ai-test-framework.git](https://github.com/your-username/ai-test-framework.git)
 cd ai-test-framework
 ```
 
-Create a Virtual Environment:
+**Create a Virtual Environment:**
 ```
 python -m venv .venv
 # Windows
@@ -55,13 +55,13 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-Install Dependencies:
+**Install Dependencies:**
 ```
 pip install -r requirements.txt
 playwright install
 ```
 
-Configure Environment Variables: Create a .env file in the root directory:
+**Configure Environment Variables: Create a .env file in the root directory:**
 ```
 # Get your key from aistudio.google.com
 GEMINI_API_KEY=your_actual_api_key_here
@@ -72,7 +72,7 @@ BASE_URL=[https://www.amazon.com](https://www.amazon.com)
 
 Create .feature files in the features/ folder. The framework supports standard Gherkin syntax.
 
-Example: **features/amazon.feature**
+Example: ```features/amazon.feature```
 ```
 Feature: Basic User Workflow on Amazon
 
@@ -104,7 +104,7 @@ Feature: Basic User Workflow on Amazon
 
 This framework operates in three distinct modes depending on your testing stage.
 
-1. 🧠 Learning Mode (Training)
+1. 🧠 **Learning Mode (Training)**
 
 Goal: Explore the application, execute steps using AI, and build a "Workflow Memory" (workflow_graph.json).
 When to use: When you have a new feature file or the UI has changed significantly.
@@ -128,7 +128,7 @@ pytest tests/test_learn_application.py
 pytest tests/test_learn_application.py -k "amazon"
 ```
 
-2. 🛡️ Validation Mode (Regression)
+2. 🛡️ **Validation Mode (Regression)**
 
 Goal: Replay the learned workflow without calling the AI for every step.
 When to use: CI/CD pipelines, nightly builds, or quick regression checks.
@@ -140,7 +140,7 @@ Command:
 pytest tests/test_validation.py
 ```
 
-3. 🧪 Scenario Mode (Live AI Testing)
+3. 🧪 **Scenario Mode (Live AI Testing)**
 
 Goal: Execute tests directly using the AI in real-time without saving/loading memory.
 When to use: Debugging new prompts, testing the AI's reasoning capabilities, or one-off test runs.
@@ -150,7 +150,7 @@ Command:
 pytest tests/test_scenarios.py -k "Amazon"
 ```
 
-🚨 Anomaly Detection
+# 🚨 Anomaly Detection
 
 Anomaly detection is implicit in the Validation Mode.
 
@@ -160,7 +160,7 @@ UI Changes: If a stored selector no longer works, the framework catches the exce
 
 Reporting: (Future) The AI can be triggered upon failure to analyze the DOM and provide a root cause analysis (e.g., "The Login button ID changed from #submit to #btn-login").
 
-🤝 Contributing
+# 🤝 Contributing
 
 Fork the repository.
 
@@ -172,6 +172,6 @@ Push to the branch (```git push origin feature/AmazingFeature```).
 
 Open a Pull Request.
 
-📄 License
+# 📄 License
 
 Distributed under the MIT License.
